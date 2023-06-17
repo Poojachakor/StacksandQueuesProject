@@ -1,14 +1,20 @@
-﻿namespace StacksandQueuesProject
+﻿using System.Collections.Generic;
+
+namespace StacksandQueuesProject
 {
     internal class Program
     {
         static void Main(string[] args)
         {
-            StackQueueDemo stackLinkedList = new StackQueueDemo();
-            stackLinkedList.Push(70);
-            stackLinkedList.Push(30);
-            stackLinkedList.Push(56);
-            stackLinkedList.Display();
+            Stack stack = new Stack();
+            stack.Push(70);
+            stack.Push(30);
+            stack.Push(56);
+            stack.Display();
+            stack.Peek();
+            stack.Pop();
+            stack.IsEmpty();
+            stack.Display();
         }
     }
 }

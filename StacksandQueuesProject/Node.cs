@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace StacksandQueuesProject
 {
-    internal class Node
+    public class Node
     {
         public int data;
         public Node next;
