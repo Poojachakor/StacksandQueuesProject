@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using System.Collections;
+using System.Collections.Generic;
 
 namespace StacksandQueuesProject
 {
@@ -6,6 +7,7 @@ namespace StacksandQueuesProject
     {
         static void Main(string[] args)
         {
+            //Stack Operations
             Stack stack = new Stack();
             stack.Push(70);
             stack.Push(30);
@@ -15,6 +17,12 @@ namespace StacksandQueuesProject
             stack.Pop();
             stack.IsEmpty();
             stack.Display();
+            //Queue Operations
+            Queue linkedListQueue = new Queue();
+            linkedListQueue.Enqueue(56);
+            linkedListQueue.Enqueue(30);
+            linkedListQueue.Enqueue(70);
+            linkedListQueue.Display();
         }
     }
 }
